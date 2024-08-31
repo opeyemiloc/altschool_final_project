@@ -1,0 +1,39 @@
+# version: 2
+
+# models:
+#   - name: fct_sales_by_category
+#     description: "This model provides the final aggregated sales data by product category, used for reporting and analytics."
+#     columns:
+#       - name: product_category_name
+#         description: "The category to which the product belongs."
+#         tests:
+#           - not_null
+#       - name: total_sales
+#         description: "The total sales amount for the product category."
+#         tests:
+#           - not_null
+
+#   - name: fct_avg_delivery_time
+#     description: "This model provides the final average delivery time for orders, used for reporting and analytics."
+#     columns:
+#       - name: order_id
+#         description: "Unique identifier for each order."
+#         tests:
+#           - unique
+#           - not_null
+#       - name: avg_delivery_time
+#         description: "The average time taken for delivery in days."
+#         tests:
+#           - not_null
+
+#   - name: fct_orders_by_state
+#     description: "This model provides the final count of orders by state, used for reporting and analytics."
+#     columns:
+#       - name: state
+#         description: "The state where the order was delivered."
+#         tests:
+#           - not_null
+#       - name: total_orders
+#         description: "The total number of orders delivered in the state."
+#         tests:
+#           - not_null

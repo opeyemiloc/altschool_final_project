@@ -1,0 +1,33 @@
+version: 2
+
+models:
+  - name: stg_orders
+    description: "This model cleans and prepares the orders data from the raw orders table."
+    columns:
+      - name: order_id
+        description: "Unique identifier for each order."
+        tests:
+          - unique
+          - not_null
+      - name: customer_id
+        description: "Unique identifier for each customer associated with the order."
+        tests:
+          - not_null
+      - name: order_status
+        description: "The current status of the order."
+        tests:
+          - accepted_values:
+              values: ['delivered', 'shipped', 'processing', 'canceled', 'unavailable']
+
+  - name: stg_products
+    description: "This model cleans and prepares the products data from the raw products table."
+    columns:
+      - name: product_id
+        description: "Unique identifier for each product."
+        tests:
+          - unique
+          - not_null
+      - name: product_category_name
+        description: "The category to which the product belongs."
+        tests:
+          - not_null

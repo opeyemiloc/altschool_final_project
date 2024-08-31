@@ -1,0 +1,24 @@
+version: 2
+
+sources:
+  - name: flimsy_dataset_alt
+    description: "Source dataset containing various tables."
+    tables:
+      - name: customers
+        description: "Customer details"
+      - name: orders
+        description: "Order details"
+      - name: order_items
+        description: "Details of items in orders"
+      - name: order_payments
+        description: "Payment details for orders"
+      - name: order_reviews
+        description: "Customer reviews for orders"
+      - name: products
+        description: "Product details"
+      - name: sellers
+        description: "Seller information"
+      - name: product_category_name_translation
+        description: "Product category name translations"
+      - name: geolocation
+        description: "Geolocation details"
