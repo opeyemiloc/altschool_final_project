@@ -1,0 +1,13 @@
+.env
+env_alt
+pg_data
+__pycache__
+target/
+dbt_packages/
+logs/
+.user.yml
+profiles.yml
+logs
+config
+plugins
+.gitignore
